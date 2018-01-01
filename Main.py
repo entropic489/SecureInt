@@ -1,6 +1,7 @@
 import sys, os
 sys.path.append('/usr/lib/python3.5')
 
+#check for netmiko, install if not present
 if 'netmiko' in sys.modules:
     print "Dependencies already present"
 else:
