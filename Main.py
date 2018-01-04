@@ -9,11 +9,11 @@ else:
     valid_input = False
 
     while not valid_input:
-        if confirmation == "y":
+        if confirmation == "y" or confirmation == "Y":
             valid_input = True
             os.system("gnome-terminal -e 'sudo apt-get install netmiko'")
             raw_input("A terminal will open to request sudo permission to install netmiko library. Press enter to continue after dependencies installed.")
-        elif confirmation == "n":
+        elif confirmation == "n" or confirmation == "N":
             valid_input = True
             raw_input("Press enter to quit....")
             sys.exit()
